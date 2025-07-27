@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: seashell;
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+}
+/* ============================
+   TOP HEAD
+============================ */
+
+.top-head {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid seashell;        
+  height: 69px;
+  margin-right: 10px;
+  align-items: center;
+  background-color: black;
+  z-index: 1000;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+.logo {
+height: 50px;
+margin-left: 10px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav li a {
+  color: seashell;
+  text-decoration: none;
+  font-weight: bold;
+  justify-content: flex-end;
+  text-decoration: underline;
+}
+
+/* ============================
+   MISSION
+============================ */
+.mission {
+  position: relative;
+  text-align: center;
+}
+
+.image-background {
+  display: block;          /* remove inline spacing */
+  margin: auto;          /* centers the image horizontally */
+  height: 700px;
+  object-fit: cover;
+  width: 1200px;
+}
+
+.mission-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  padding: auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;    /* ✅ vertically center */
+  align-items: center;        /* ✅ horizontally center */
+  text-align: center;
+  padding: 40px 20px;
+  
+
+}
+/* ============================
+   TEA MONTH
+============================ */
+
+
+ .tea-month {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.tea-month h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.tea-month h3 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.tea-row {
+  display: flex;
+  justify-content: center;
+  gap: 50px;              /* horizontal gap between tea items */
+  margin-bottom: 50px;    /* vertical gap between first and second row */
+  flex-wrap: nowrap;      /* ensures all items stay on one row */
+}
+
+.tea-row-narrow {
+  max-width: 700px;       /* centers and narrows second row */
+  margin: 0 auto;
+}
+
+.tea-item {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tea-image {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.tea-item h4 {
+  font-size: 18px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+/* ============================
+   LOCATION INFO
+============================ */
+
+.location-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 60px 0;
+}
+
+.location {
+  width: 1200px;
+  background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 0; /* add space above and below */
+  text-align: center;
+  color: seashell;
+  height: 500px;
+}
+
+.location h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.location-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 40px;
+  flex-wrap: nowrap;
+}
+
+.location-cards p{
+    line-height: 2.2;
+}
+
+.card {
+  width: 300px;
+  background-color: black;
+  padding: 15px;
+  color: seashell;
+  gap: 40px;
+  opacity: 1;
+  width: 300px;
+}
+
+/* ============================
+   CONTACT
+============================ */
+.contact{
+height: 200px;
+}
+
+.con{
+ background-color: black;
+}
+
+.con h5{
+    line-height: 2;
+}
+.contact h5:first-of-type {
+  margin-top: 30px; /* extra space above the first h5 */
+}
+/* ============================
+   FOOTER
+============================ */
+.copyright {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+  height: 50px;
+  width: 100vw;
+  left: 0;
+  margin-left: calc(-50vw + 50%);
+}
+
+.copyright p {
+  padding-left: 20px;
+  margin: 0;
+  font-size: 16px;
+  text-align: left;
+}
